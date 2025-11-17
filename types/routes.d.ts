@@ -1,7 +1,7 @@
 /**
  * Route mode types for transportation
  */
-export type RouteMode = 'train' | 'bus' | 'flight' | 'car';
+export type RouteMode = 'train' | 'bus' | 'flight' | 'car' | 'ferry';
 
 /**
  * Route option interface representing a single travel route option

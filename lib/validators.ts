@@ -66,7 +66,7 @@ export const settingsSchema = z.object({
 // RouteOption schema for validating route options
 export const RouteOptionSchema = z.object({
   id: z.string().optional(),
-  mode: z.enum(['train', 'bus', 'flight', 'car', 'ferry', 'train+bus', 'bus+train'], {
+  mode: z.enum(['train', 'bus', 'flight', 'car', 'ferry', 'ferry', 'train+bus', 'bus+train'], {
     errorMap: () => ({ message: 'Mode must be train, bus, flight, car, ferry, or combination' }),
   }),
   cost: z.number().nonnegative('Cost must be non-negative').finite('Cost must be a finite number'),
